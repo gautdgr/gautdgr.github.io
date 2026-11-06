@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gauthier de Grand Ry | Future Outbound Account Executive</title>
+<meta name="description" content="Business-minded and tech-curious future sales professional based in Wavre, Belgium. Founder of Oclevia, a B2B SaaS for healthcare practices in development.">
+<meta property="og:title" content="Gauthier de Grand Ry | Future Outbound Account Executive">
+<meta property="og:description" content="Business-minded and tech-curious future sales professional with hands-on customer experience, digital business training and an entrepreneurial mindset.">
+<meta property="og:image" content="assets/photo.jpg">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#3B1C78">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%233B1C78'/%3E%3Cpath d='M18 33l9 9 19-20' fill='none' stroke='%23BDEFCF' stroke-width='7' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;700&family=Unbounded:wght@500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --violet:#3B1C78;      /* hero + CTA field */
+  --violet-deep:#2A1356; /* lanes on violet */
+  --paper:#F2EEF9;       /* content background */
+  --ink:#1C1530;         /* body text */
+  --muted:#5E5674;       /* secondary text on paper */
+  --accent:#6A48D6;      /* links + focus on paper */
+  --mint:#BDEFCF;        /* positive / closed */
+  --white:#FFFFFF;
+  --display:"Unbounded", "Arial Black", sans-serif;
+  --text:"Schibsted Grotesk", "Helvetica Neue", Arial, sans-serif;
+  --measure:62ch;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 1.0625rem/1.6 var(--text);-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:6px}
+.hero :focus-visible,.cta :focus-visible{outline-color:var(--mint)}
+.wrap{width:min(1180px,100% - 48px);margin-inline:auto}
+
+/* ---------- Hero ---------- */
+[hidden]{display:none!important}
+.hero{background:var(--violet);color:var(--white);padding:28px 0 56px;overflow:hidden}
+.hero-top{display:flex;justify-content:space-between;align-items:center;gap:16px}
+.mark{font:700 1rem/1 var(--display);text-decoration:none;letter-spacing:.02em}
+.hero-links{display:flex;gap:10px;flex-wrap:wrap}
+.pill{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:999px;font:500 .95rem/1 var(--text);text-decoration:none;border:1.5px solid rgba(255,255,255,.45);transition:background-color .2s,border-color .2s}
+.pill:hover{background:rgba(255,255,255,.1);border-color:var(--white)}
+.pill-solid{background:var(--mint);border-color:var(--mint);color:var(--ink)}
+.pill-solid:hover{background:var(--white);border-color:var(--white)}
+
+.hero-main{display:grid;grid-template-columns:1fr auto;align-items:center;gap:48px;margin-top:64px}
+.hero h1{font:800 clamp(2.6rem,7.4vw,6.4rem)/.98 var(--display);letter-spacing:-.02em;margin:0}
+.role{font:500 clamp(1.05rem,2vw,1.45rem)/1.3 var(--display);color:var(--mint);margin:22px 0 0}
+.lede{font-size:clamp(1.05rem,1.4vw,1.2rem);line-height:1.55;max-width:56ch;margin:22px 0 0;color:rgba(255,255,255,.9)}
+.facts{margin:14px 0 0;color:rgba(255,255,255,.7);font-size:.98rem}
+.portrait{width:clamp(150px,22vw,280px);height:auto;aspect-ratio:1;border-radius:50%;object-fit:cover;box-shadow:0 0 0 6px var(--violet),0 0 0 8px var(--mint)}
+
+/* Pipeline board: the one moving thing on the page */
+.pipeline{list-style:none;margin:72px 0 0;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.lane{background:var(--violet-deep);border-radius:14px;padding:14px;display:flex;flex-direction:column;min-height:170px;transition:background-color .5s}
+.lane a{display:flex;align-items:baseline;gap:10px;font:700 1.05rem/1.2 var(--display);text-decoration:none}
+.lane a:hover .lane-name{text-decoration:underline;text-underline-offset:4px}
+.lane-n{font:500 .8rem/1 var(--text);opacity:.65}
+.lane-sub{display:block;font-size:.9rem;color:rgba(255,255,255,.62);margin:6px 0 12px}
+.lane-body{flex:1;border:1.5px dashed rgba(255,255,255,.18);border-radius:10px;padding:8px;min-height:86px}
+.deal{background:var(--white);color:var(--ink);border-radius:10px;padding:12px 12px 10px;box-shadow:0 10px 24px rgba(20,8,48,.35);will-change:transform}
+.deal small{display:block;font-size:.78rem;color:var(--muted)}
+.deal strong{display:block;font:700 .98rem/1.3 var(--text);margin-top:2px}
+.deal-status{display:inline-block;margin-top:8px;padding:3px 10px;border-radius:999px;background:#ECE7F7;color:var(--violet);font-size:.78rem;font-weight:500;transition:background-color .4s,color .4s}
+.pipeline.is-closed .lane-close{background:#4A2C8C}
+.pipeline.is-closed .deal-status{background:var(--mint);color:#14522C}
+
+/* ---------- Stages ---------- */
+.stage{padding:96px 0;border-bottom:1px solid #E0D8EF}
+.stage-grid{display:grid;grid-template-columns:280px 1fr;gap:56px;align-items:start}
+.stage-mark{position:sticky;top:28px}
+.stage-mark .n{display:inline-grid;place-items:center;width:38px;height:38px;border-radius:50%;border:2px solid var(--violet);font:700 .95rem/1 var(--display);color:var(--violet)}
+.stage-mark .name{display:block;font:800 clamp(1.35rem,1.9vw,1.65rem)/1.05 var(--display);color:var(--violet);margin-top:14px;letter-spacing:-.01em}
+.stage-mark .what{display:block;color:var(--muted);margin-top:8px;font-size:.98rem}
+.stage h2{font:700 clamp(1.5rem,2.4vw,1.95rem)/1.2 var(--display);margin:0 0 18px;letter-spacing:-.01em}
+.stage h3{font:700 1.15rem/1.3 var(--text);margin:0}
+.prose{max-width:var(--measure)}
+.prose p{margin:0 0 14px}
+.split{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:44px}
+.split h3{font:700 1rem/1.3 var(--display);color:var(--violet);margin-bottom:12px}
+.plain{list-style:none;margin:0;padding:0}
+.plain li{padding:8px 0;border-top:1px solid #E0D8EF}
+.plain li:first-child{border-top:0;padding-top:0}
+.plain .sub{display:block;color:var(--muted);font-size:.93rem}
+
+/* Experience */
+.job{display:grid;grid-template-columns:170px 1fr;gap:24px;padding:26px 0;border-top:1px solid #E0D8EF}
+.job:first-of-type{border-top:0;padding-top:0}
+.job time{color:var(--muted);font-size:.95rem;padding-top:3px}
+.job .org{color:var(--muted);font-weight:500}
+.job ul{margin:10px 0 0;padding-left:18px;max-width:var(--measure)}
+.job li{margin:4px 0}
+
+/* Projects */
+.feature{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;background:var(--white);border-radius:22px;padding:40px;box-shadow:0 1px 0 #E0D8EF}
+.feature h3{font:800 clamp(1.7rem,3vw,2.3rem)/1.1 var(--display);letter-spacing:-.01em}
+.status{display:inline-block;margin:14px 0 18px;padding:5px 12px;border-radius:999px;background:#ECE7F7;color:var(--violet);font-size:.88rem;font-weight:500}
+.feature .claim{font-size:1.2rem;line-height:1.45;margin:0 0 18px;max-width:40ch}
+.feature h4{font:700 .98rem/1.3 var(--text);margin:24px 0 8px}
+.feature ul{margin:0;padding-left:18px}
+.feature li{margin:4px 0}
+.textlink{display:inline-block;margin-top:26px;font-weight:700;color:var(--accent);text-underline-offset:4px}
+.textlink:hover{color:var(--violet)}
+
+/* Concept illustration of the core idea: one slot */
+.slotdemo{align-self:center;background:var(--paper);border-radius:18px;padding:22px}
+.slotdemo .day{font:700 .95rem/1 var(--display);color:var(--violet);margin-bottom:14px}
+.slot{display:grid;grid-template-columns:54px 1fr;gap:12px;align-items:center;background:var(--white);border-radius:10px;padding:12px 14px;margin-bottom:8px;font-size:.95rem}
+.slot .t{font-weight:700;color:var(--muted)}
+.slot.off{color:var(--muted);text-decoration:line-through;background:transparent;border:1.5px dashed #CFC6E3}
+.slot.off .t{text-decoration:none}
+.slot.filled{background:var(--mint);color:#123D23}
+.slot.filled .t{color:#123D23}
+.slot .why{display:block;font-size:.82rem;opacity:.85}
+.slotdemo figcaption{font-size:.85rem;color:var(--muted);margin-top:12px}
+
+.minor{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:end;padding:30px 4px 0;margin-top:30px;border-top:1px solid #E0D8EF}
+.minor p{margin:8px 0 0;max-width:var(--measure);color:var(--ink)}
+.minor .soon{color:var(--muted);font-size:.95rem;white-space:nowrap}
+
+/* Close */
+.checks{list-style:none;margin:0;padding:0;display:grid;gap:14px;max-width:70ch}
+.checks li{position:relative;padding-left:40px;font-size:1.08rem}
+.checks li::before{content:"";position:absolute;left:0;top:.15em;width:26px;height:26px;border-radius:50%;background:var(--mint)}
+.checks li::after{content:"";position:absolute;left:9px;top:calc(.15em + 6px);width:7px;height:12px;border:solid #14522C;border-width:0 2.5px 2.5px 0;transform:rotate(45deg)}
+
+.cta{background:var(--violet);color:var(--white);padding:96px 0 40px}
+.cta h2{font:800 clamp(3rem,10vw,8.5rem)/.95 var(--display);margin:0;letter-spacing:-.03em}
+.cta p{max-width:52ch;color:rgba(255,255,255,.85);margin:22px 0 0;font-size:1.12rem}
+.cta-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.cta .pill{padding:14px 22px;font-size:1rem}
+.foot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-top:88px;padding-top:22px;border-top:1px solid rgba(255,255,255,.18);font-size:.9rem;color:rgba(255,255,255,.65)}
+
+/* ---------- Responsive ---------- */
+@media (max-width:900px){
+  .hero-main{grid-template-columns:1fr;gap:28px;margin-top:40px}
+  .portrait{order:-1;width:132px}
+  .pipeline{grid-template-columns:repeat(2,1fr);margin-top:48px}
+  .lane{min-height:150px}
+  .stage{padding:64px 0}
+  .stage-grid{grid-template-columns:1fr;gap:28px}
+  .stage-mark{position:static;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+  .stage-mark .name{margin-top:0}
+  .stage-mark .what{flex-basis:100%;margin-top:0}
+  .split{grid-template-columns:1fr;gap:28px}
+  .feature{grid-template-columns:1fr;padding:26px}
+}
+@media (max-width:560px){
+  .wrap{width:calc(100% - 32px)}
+  .hero-top .mark{display:none}
+  .hero-top{justify-content:flex-start}
+  .job{grid-template-columns:1fr;gap:4px}
+  .minor{grid-template-columns:1fr}
+  .lane{padding:12px;min-height:140px}
+  .lane a{font-size:.92rem}
+  .lane-sub{font-size:.8rem}
+}
+</style>
+</head>
+<body id="top">
+
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-top">
+      <a class="mark" href="#top" aria-label="Back to top">GdGR</a>
+      <nav class="hero-links" aria-label="Contact">
+        <a class="pill" href="mailto:gautdgr@gmail.com">Email me</a>
+        <a class="pill" href="https://github.com/gautdgr">GitHub</a>
+      </nav>
+    </div>
+
+    <div class="hero-main">
+      <div>
+        <h1>Gauthier<br>de Grand Ry</h1>
+        <p class="role">Future Outbound Account Executive</p>
+        <p class="lede">Business-minded and tech-curious future sales professional with hands-on customer experience, digital business training and an entrepreneurial mindset.</p>
+        <p class="facts">Based in Wavre, Belgium. French and English fluent.</p>
+      </div>
+      <img class="portrait" src="assets/photo.jpg" width="640" height="640" alt="Portrait of Gauthier de Grand Ry">
+    </div>
+
+    <ol class="pipeline" id="pipeline" aria-label="Sections of this page, laid out as a sales pipeline">
+      <li class="lane">
+        <a href="#understand"><span class="lane-n">1</span><span class="lane-name">Understand</span></a>
+        <span class="lane-sub">Profile and skills</span>
+        <div class="lane-body"></div>
+      </li>
+      <li class="lane">
+        <a href="#connect"><span class="lane-n">2</span><span class="lane-name">Connect</span></a>
+        <span class="lane-sub">Customer-facing experience</span>
+        <div class="lane-body"></div>
+      </li>
+      <li class="lane">
+        <a href="#demonstrate"><span class="lane-n">3</span><span class="lane-name">Demonstrate</span></a>
+        <span class="lane-sub">Projects</span>
+        <div class="lane-body"></div>
+      </li>
+      <li class="lane lane-close">
+        <a href="#close"><span class="lane-n">4</span><span class="lane-name">Close</span></a>
+        <span class="lane-sub">What I bring and contact</span>
+        <div class="lane-body">
+          <div class="deal" id="deal">
+            <small>Opportunity</small>
+            <strong>Outbound Account Executive at Odoo</strong>
+            <span class="deal-status" id="deal-status">Ready to talk</span>
+          </div>
+        </div>
+      </li>
+    </ol>
+  </div>
+</header>
+
+<main>
+  <section class="stage" id="understand" aria-labelledby="h-understand">
+    <div class="wrap stage-grid">
+      <div class="stage-mark" aria-hidden="true">
+        <span class="n">1</span><span class="name">Understand</span><span class="what">Profile and skills</span>
+      </div>
+      <div>
+        <h2 id="h-understand">Profile</h2>
+        <div class="prose">
+          <p>I enjoy understanding how a business works, communicating clearly with people and turning an idea into a practical solution.</p>
+          <p>I am looking to develop outbound prospecting, client discovery and full-cycle sales skills at Odoo.</p>
+        </div>
+
+        <div class="split">
+          <div>
+            <h3>Education</h3>
+            <ul class="plain">
+              <li>Entrepreneurship &amp; E-commerce Training, IFAPME<span class="sub">2026 to 2027 (expected). Entrepreneurship, e-commerce, market research, marketing and business planning</span></li>
+              <li>E-business, EPHEC<span class="sub">2025 to 2026, one academic year</span></li>
+              <li>CESS, General Secondary Education<span class="sub">Institut de la Providence, Wavre, 2022 to 2025</span></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Skills</h3>
+            <ul class="plain">
+              <li>Sales and client communication</li>
+              <li>Market research</li>
+              <li>Business planning</li>
+              <li>Digital marketing fundamentals</li>
+              <li>AI-assisted web development</li>
+              <li>Microsoft and Google productivity tools</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Languages</h3>
+            <ul class="plain">
+              <li>French<span class="sub">Native</span></li>
+              <li>English<span class="sub">Fluent, professional</span></li>
+              <li>Spanish<span class="sub">A1 to A2</span></li>
+              <li>Dutch<span class="sub">A1 to A2</span></li>
+            </ul>
+            <p class="plain sub" style="margin:18px 0 0;color:var(--muted);font-size:.93rem">Outside work: running, street lifting and strength training.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="stage" id="connect" aria-labelledby="h-connect">
+    <div class="wrap stage-grid">
+      <div class="stage-mark" aria-hidden="true">
+        <span class="n">2</span><span class="name">Connect</span><span class="what">Customer-facing experience</span>
+      </div>
+      <div>
+        <h2 id="h-connect">Experience</h2>
+        <article class="job">
+          <time datetime="2025-07">July to August 2025</time>
+          <div>
+            <h3>Retail Sales Assistant <span class="org">at Delhaize</span></h3>
+            <ul>
+              <li>Assisted customers and contributed to a smooth, welcoming in-store experience</li>
+              <li>Worked across shelf replenishment, checkout operations and day-to-day customer service</li>
+            </ul>
+          </div>
+        </article>
+        <article class="job">
+          <time datetime="2025-01">January to April 2025</time>
+          <div>
+            <h3>Activity Leader <span class="org">at Bim Bam Bulle</span></h3>
+            <ul>
+              <li>Organised birthday parties and recreational activities for children</li>
+              <li>Led groups of children aged 5 to 12 while ensuring a positive experience for children and families</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="stage" id="demonstrate" aria-labelledby="h-demonstrate">
+    <div class="wrap stage-grid">
+      <div class="stage-mark" aria-hidden="true">
+        <span class="n">3</span><span class="name">Demonstrate</span><span class="what">Projects</span>
+      </div>
+      <div>
+        <h2 id="h-demonstrate">Projects</h2>
+
+        <article class="feature">
+          <div>
+            <h3>Oclevia</h3>
+            <span class="status">In development, not yet launched</span>
+            <p class="claim">Scheduling software for Belgian (para)medical practices. When a slot frees up, it fills itself.</p>
+            <p>A B2B SaaS for appointment management, starting with the Belgian market. I am the founder.</p>
+
+            <h4>What I do</h4>
+            <ul>
+              <li>Defined the product scope: online booking calendar, SMS and email reminders, waiting list and rebooking, with INAMI billing integration planned</li>
+              <li>Build the product with AI-assisted development</li>
+              <li>Prepare the go-to-market: prospecting workflows, social media presence and an incubator application</li>
+            </ul>
+
+            <h4>What the product covers</h4>
+            <ul>
+              <li>Scheduling around working hours, leave and real appointment lengths</li>
+              <li>A waiting list that automatically notifies the right patient</li>
+              <li>Recall reminders, digital admission forms and attendance statistics</li>
+              <li>Shared access for secretaries and practitioners, with EU data hosting and two-factor authentication</li>
+            </ul>
+
+            <a class="textlink" href="https://oclevia.com">Visit oclevia.com</a>
+          </div>
+
+          <figure class="slotdemo" aria-label="Illustration of the waiting-list idea">
+            <div class="day">Tuesday</div>
+            <div class="slot"><span class="t">9:00</span><span>Booked</span></div>
+            <div class="slot off"><span class="t">9:30</span><span>Patient cancels</span></div>
+            <div class="slot filled"><span class="t">9:30</span><span>Booked from the waiting list<span class="why">Offered automatically, confirmed by link</span></span></div>
+            <div class="slot"><span class="t">10:00</span><span>Booked</span></div>
+            <figcaption>Illustration of the core idea, not a product screenshot.</figcaption>
+          </figure>
+        </article>
+
+        <div class="minor">
+          <div>
+            <h3>Web projects, personal and academic</h3>
+            <p>Designed and developed several web projects, from concept and audience needs to a working website.</p>
+          </div>
+          <span class="soon">Case studies coming soon</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="stage" id="close" aria-labelledby="h-close">
+    <div class="wrap stage-grid">
+      <div class="stage-mark" aria-hidden="true">
+        <span class="n">4</span><span class="name">Close</span><span class="what">What I bring</span>
+      </div>
+      <div>
+        <h2 id="h-close">What I bring to Odoo</h2>
+        <ul class="checks">
+          <li>Customer relationship skills built in fast-paced retail and service environments</li>
+          <li>Strong interest in software, digital business and how technology solves operational problems</li>
+          <li>An analytical and entrepreneurial approach: market research, business planning and web project creation</li>
+          <li>Resilience, initiative and the ambition to learn cold outreach and long-term client relationship management</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="cta" aria-labelledby="h-talk">
+  <div class="wrap">
+    <h2 id="h-talk">Let’s talk.</h2>
+    <p>I am applying for the Outbound Account Executive role at Odoo in Louvain-la-Neuve. Based in Wavre, with a car and a B driving licence.</p>
+    <div class="cta-links">
+      <a class="pill pill-solid" href="mailto:gautdgr@gmail.com?subject=Outbound%20Account%20Executive">Email gautdgr@gmail.com</a>
+      <a class="pill" id="cv-link" href="cv.pdf" download hidden>Download my CV</a>
+      <a class="pill" href="https://github.com/gautdgr">View my GitHub</a>
+    </div>
+    <div class="foot">
+      <span>© 2026 Gauthier de Grand Ry</span>
+      <a href="#top">Back to top</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  // Show the CV button only once cv.pdf has been added to the site.
+  var cv = document.getElementById('cv-link');
+  if (location.protocol.indexOf('http') === 0) {
+    fetch('cv.pdf', { method: 'HEAD' }).then(function (r) { if (r.ok) cv.hidden = false; }).catch(function () {});
+  }
+
+  // Pipeline: the opportunity card travels Understand -> Close once, on load.
+  var board = document.getElementById('pipeline');
+  var card = document.getElementById('deal');
+  var status = document.getElementById('deal-status');
+  var bodies = board.querySelectorAll('.lane-body');
+  var steps = ['Discovery', 'Contact made', 'Demo given', 'Ready to talk'];
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function done() { status.textContent = steps[3]; board.classList.add('is-closed'); }
+  if (reduce || !card.animate) { done(); return; }
+
+  function moveTo(i) {
+    var first = card.getBoundingClientRect();
+    bodies[i].appendChild(card);
+    var last = card.getBoundingClientRect();
+    status.textContent = steps[i];
+    return card.animate([
+      { transform: 'translate(' + (first.left - last.left) + 'px,' + (first.top - last.top) + 'px)' },
+      { transform: 'translate(0,0)' }
+    ], { duration: 650, easing: 'cubic-bezier(.2,.8,.2,1)' }).finished;
+  }
+
+  bodies[0].appendChild(card);
+  status.textContent = steps[0];
+  var wait = function (ms) { return new Promise(function (r) { setTimeout(r, ms); }); };
+  wait(900)
+    .then(function () { return moveTo(1); }).then(function () { return wait(450); })
+    .then(function () { return moveTo(2); }).then(function () { return wait(450); })
+    .then(function () { return moveTo(3); })
+    .then(done);
+})();
+</script>
+</body>
+</html>
